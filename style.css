@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('CenturyGothic.woff2') format('woff2'),
+        url('CenturyGothic.woff') format('woff'),
+        url('CenturyGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+header {
+     background: #343B7A;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 14vw;
+    margin-right: 9vw;
+     text-align: center;
+    height: 4vw;
+   
+}
+nav h1 {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1.2vw;
+   color: #E6E5FF;
+}
+nav .menu a {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1.2vw;
+   color: #E6E5FF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 0.8vw;
+}
+.menu {
+    display: flex;
+}
+.effect-nav {
+  padding: 0 20px;
+  height: 40px;
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.effect-nav a {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+
+.effect-nav a::before,
+.effect-nav a::after {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+
+.effect-nav a::before {
+  top: 0;
+  left: -10px;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+}
+
+.effect-nav a::after {
+  right: -10px;
+  bottom: 0;
+  transform: rotate(90deg);
+  transform-origin: 100% 100%;
+}
+
+.menu .effect-nav:first-child a::before {
+  left: 50%;
+  opacity: 1;
+  transform: rotate(0deg) translateX(-50%);
+}
+
+.menu .effect-nav:first-child a::after {
+  right: 50%;
+  opacity: 1;
+  transform: rotate(0deg) translateX(50%);
+}
+.effect-nav a:hover::before {
+  left: 50%;
+  opacity: 1;
+  transform: rotate(0deg) translateX(-50%);
+}
+
+.effect-nav a:hover::after {
+  right: 50%;
+  opacity: 1;
+  transform: rotate(0deg) translateX(50%);
+}
+
+main img {
+    margin-top: -1.5vw;
+    width: 100%;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 5vw;
+    margin-bottom: 6.8vw;
+}
+.txt {
+    text-indent: 1vw;
+    text-align: justify;
+    margin-left: 5vw;
+  font-family: Century Gothic, sans-serif;
+    font-size: 1.26vw;
+    margin-top: -1.3vw;
+}
+.img img {
+    border-radius: 4%;
+    width: 43vw;
+}
+footer {
+     background: #343B7A;
+  
+  
+
+}
+.adress {
+      margin-right: 7vw;
+    margin-left: 7vw;
+    display: flex;
+    align-items: center;
+      height: 4vw;
+    justify-content: space-between;
+}
+.adress p {
+    text-align: right;
+     font-family: Century Gothic, sans-serif;
+    font-size: 1vw;
+       color: #E6E5FF;
+    
+}
